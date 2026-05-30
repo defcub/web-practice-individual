@@ -50,3 +50,92 @@ ul {
     margin: 0 auto;
     padding: 0 24px;
 }
+
+/* --- BUTTONS --- */
+.btn {
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    padding: 10px 30px;
+}
+
+.btn-outline:hover {
+    background: var(--text-white);
+    color: var(--bg-dark);
+}
+
+/* =========================================
+   HEADER & NAVBAR
+   ========================================= */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 20px 0;
+}
+
+.main-header.scrolled {
+    background-color: rgba(30, 30, 43, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar { height: 50px; }
+
+.logo img {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001; /*щоб  могли його закрити */
+}
+
+.d-none-mobile { display: none; } 
+
+/* МОБІЛЬНЕ МЕНЮ */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+}
+
+.nav-menu.menu-open { right: 0; } 
+
+.main-menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 1.5rem;
+}
+
+.main-menu a.active {
+    color: var(--primary-color);
+}
