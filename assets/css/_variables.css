@@ -1,0 +1,7 @@
+:root {
+    --bg-dark: #1E1E2B;
+    --primary-color: #5454D4;
+    --text-white: #FFFFFF;
+    --text-gray: rgba(255, 255, 255, 0.7);
+    --main-font: 'Graphik', sans-serif;
+}

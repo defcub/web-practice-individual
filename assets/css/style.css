@@ -1,0 +1,52 @@
+@import url(_variables.css);
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik/Graphik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul { 
+    list-style: none; 
+}
+
+.d-none {
+     display: none !important;
+     }
+.d-flex { 
+    display: flex;
+ }
+.item-center {
+     align-items: center;
+     }
+.vertical-center {
+     align-items: center;
+     }
+.space-between {
+     justify-content: space-between;
+     }
+
+.content-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
