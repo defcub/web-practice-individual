@@ -61,6 +61,7 @@ ul {
     transition: all 0.3s ease;
 }
 
+/* Прозора кнопка з білою рамкою (Contact us) */
 .btn-outline {
     background: transparent;
     border: 1px solid var(--text-white);
@@ -71,6 +72,22 @@ ul {
 .btn-outline:hover {
     background: var(--text-white);
     color: var(--bg-dark);
+}
+
+/* фіолетова кнопка */
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    color: var(--text-white);
+    padding: 16px 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary:hover {
+    background: #4343B8;
+    transform: translateY(-3px);
 }
 
 /* =========================================
@@ -138,4 +155,38 @@ ul {
 
 .main-menu a.active {
     color: var(--primary-color);
+}
+
+            /* =========================================
+            HERO SECTION (MOBILE)
+            ========================================= */
+.hero-section {
+    position: relative; /* Щоб літаючі іконки і градієнт позиціонувалися відносно цієї секції */
+    padding-top: 120px;
+    padding-bottom: 60px;
+    overflow: hidden; /* Обрізає градієнт */
+}
+
+.hero-wrap {
+    position: relative;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-top: 24px; 
+    margin-bottom: 50px;
+    max-width: 582px; 
 }
