@@ -105,7 +105,7 @@ ul {
 
 .main-header.scrolled {
     background-color: rgba(30, 30, 43, 0.95);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(300px);
     padding: 10px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -125,7 +125,12 @@ ul {
 .menu-icon {
     font-size: 1.8rem;
     cursor: pointer;
-    z-index: 1001; /*щоб  могли його закрити */
+    z-index: 1001;
+}
+
+.menu-icon img {
+    width: 24px;
+    height: 24px;
 }
 
 .d-none-mobile { display: none; } 
@@ -189,4 +194,129 @@ ul {
     margin-top: 24px; 
     margin-bottom: 50px;
     max-width: 582px; 
+}
+
+/* --- ФОНОВИЙ ГРАДІЄНТ (Пігулка) --- */
+.hero-wrap::before {
+    content: '';
+    position: absolute;
+    width: 467px;
+    height: 1234px;
+    top: -300px;
+    left: 200px; 
+    border-radius: 233.5px;
+    transform: rotate(-54.37deg);
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.4) 0%, rgba(84, 84, 212, 0) 100%);
+    filter: blur(300px);
+    opacity: 0.6;
+    z-index: 0; 
+    pointer-events: none; 
+}
+
+/* --- КОНТЕЙНЕР ДЛЯ ФОТО --- */
+.hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+/* --- ЛІТАЮЧІ ІКОНКИ --- */
+.floating-icon {
+    position: absolute;
+    z-index: 0;
+}
+
+.icon-zigzag {
+    top: 60%;  /* Опускаємо нижче, над лівим плечем */
+    left: 5%; 
+    width: 60px;
+}
+
+.icon-play {
+    bottom: 5%; /* Біля лівого нижнього кута ромба */
+    left: 5%; 
+    width: 60px;
+}
+
+.icon-circles {
+    top: 55%;  /* Біля правого вуха */
+    right: 5%; 
+    width: 40px;
+}
+
+.icon-plus {
+    bottom: 12%; /* Біля правого нижнього кута ромба */
+    right: 5%; 
+    width: 35px;
+}
+
+/* --- КОМПОЗИЦІЯ З ФОТО ТА РОМБАМИ --- */
+.visual-composition {
+    position: relative;
+    width: 450px;
+    height: 550px; /* Робимо контейнер високим із запасом для голови */
+    margin: 0 auto;
+}
+
+.diamond-outline {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    transform: rotate(45deg);
+    z-index: 1;
+    top: 150px;
+    right: 20px;
+}
+
+.visual-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    z-index: 2;
+}
+
+.diamond-solid {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: var(--primary-color);
+    border-radius: 24px;
+    transform: rotate(45deg);
+    z-index: 3; /* Вище за контур */
+    top: 170px; /* Трохи зміщений відносно контурного ромба */
+    left: 30px;
+}
+
+.hero-guy {
+    position: absolute;
+    z-index: 4;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
+    width: 400px;
+    height: auto;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 375px;
+}
+
+/* --- АНІМАЦІЇ ПРИ СКРОЛІ --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

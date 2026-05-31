@@ -21,3 +21,13 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll('.animate-on-scroll');
+hiddenElements.forEach((el) => observer.observe(el));
