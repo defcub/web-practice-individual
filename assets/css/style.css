@@ -321,7 +321,7 @@ ul {
     max-width: none;
     width: 340px;
     transform: rotate(-23.64deg); 
-    top: -27px; 
+    top: 10px; 
     left: -10px; 
 }
 
@@ -466,7 +466,7 @@ ul {
     
     .hero-guy {
         width: 440px;
-        top: -35px;
+        top: -28px;
         left: -15px;
     }
     
