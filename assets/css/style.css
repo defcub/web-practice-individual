@@ -219,7 +219,7 @@ ul {
     background: linear-gradient(180deg, rgba(84, 84, 212, 0.4) 0%, rgba(84, 84, 212, 0) 100%);
     filter: blur(300px);
     opacity: 0.6;
-    z-index: 0; 
+    z-index: -1; 
     pointer-events: none; 
 }
 
@@ -232,7 +232,7 @@ ul {
     transform: rotate(65.71deg);
     background: linear-gradient(180deg, rgba(251, 168, 28, 0.26) 0%, rgba(224, 86, 136, 0.01) 100%);
     filter: blur(300px);
-    z-index: 0; 
+    z-index: -1; 
     pointer-events: none; 
     top: -150px;
     right: -250px; 
