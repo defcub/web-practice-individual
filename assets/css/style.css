@@ -317,6 +317,7 @@ ul {
 }
 
 .hero-guy {
+    display: block;
     position: absolute;
     max-width: none;
     width: 340px;
