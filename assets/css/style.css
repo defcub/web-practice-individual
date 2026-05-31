@@ -217,10 +217,25 @@ ul {
     border-radius: 233.5px;
     transform: rotate(-54.37deg);
     background: linear-gradient(180deg, rgba(84, 84, 212, 0.4) 0%, rgba(84, 84, 212, 0) 100%);
-    filter: blur(200px);
+    filter: blur(300px);
     opacity: 0.6;
     z-index: 0; 
     pointer-events: none; 
+}
+
+.hero-wrap::after {
+    content: '';
+    position: absolute;
+    width: 467px;
+    height: 1399px;
+    border-radius: 233.5px;
+    transform: rotate(65.71deg);
+    background: linear-gradient(180deg, rgba(251, 168, 28, 0.26) 0%, rgba(224, 86, 136, 0.01) 100%);
+    filter: blur(300px);
+    z-index: 0; 
+    pointer-events: none; 
+    top: -150px;
+    right: -250px; 
 }
 
 /* --- КОНТЕЙНЕР ДЛЯ ФОТО --- */
@@ -278,7 +293,7 @@ ul {
     border: 3.33px solid var(--text-white);
     width: 270px;
     height: 270px;
-    border-radius: 12.9px;
+    border-radius: 22.18px;
     transform: rotate(23.64deg);
 }
 
@@ -290,7 +305,7 @@ ul {
 
 .diamond-solid {
     background: var(--primary-color);
-    top: 100px;
+    top: 101px;
     left: 20px;
     z-index: 2;
 }
@@ -301,7 +316,7 @@ ul {
     height: 371px;
     top: -5px;
     left: 12px;
-    border-radius: 12.9px;
+    border-radius: 22.18px;
     transform: rotate(23.64deg);
     overflow: hidden;
     z-index: 3;
@@ -322,8 +337,8 @@ ul {
     max-width: none;
     width: 340px;
     transform: rotate(-23.64deg); 
-    top: 10px; 
-    left: -10px; 
+    top: 0px; 
+    left: -7px; 
 }
 
 /* --- АНІМАЦІЇ ПРИ СКРОЛІ --- */
@@ -448,6 +463,11 @@ ul {
     .hero-wrap::before {
         top: -250px;
         left: 200px;  
+    }
+
+    .hero-wrap::after {
+        top: -261px;
+        left: 926px;  
     }
 
     .diamond-outline, .diamond-solid {
