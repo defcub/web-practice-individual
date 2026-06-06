@@ -412,7 +412,6 @@ ul {
     border-radius: 50%;
     background-color: var(--primary-color);
     border: none;
-    padding: ;
     color: var(--text-white);
     font-size: 20px;
     display: flex;
@@ -538,6 +537,7 @@ ul {
         height: 550px; 
         left: 100px;
         top: 100px;
+        scale: 1;
     }
 
     .hero-wrap::before {
@@ -593,7 +593,7 @@ ul {
     }
 
     .icon-circles {
-        top: 60px; 
+        top: 20px; 
         right: 20px; 
         width: 51px;
     }
@@ -603,4 +603,45 @@ ul {
         right: 0px; 
         width: 50px;
     }
+
+            /* =========================================
+                    VIDEO SECTION (DESKTOPS)
+            ========================================= */
+    .video-section {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+    .video-text-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .video-section .section-title {
+        font-size: 60px;
+        line-height: 70px;
+        max-width: 588px;
+        margin-bottom: 0;
+    }
+
+    .video-section .section-subtitle {
+        font-size: 21px;
+        line-height: 39px;
+        letter-spacing: -0.66px;
+        max-width: 588px;
+    }
+
+    .video-wrapper {
+        max-width: 100%;
+        height: 670px;
+    }
+
+    .video-play-btn {
+        width: 80px; 
+        height: 80px;
+    }
+
+    
 }
