@@ -620,6 +620,9 @@ ul {
     transform: scale(0.9);
 }
 
+.portfolio-pagination {
+    display: none;
+}
 
 .icon-circles-portfolio {
     top: 51px; 
@@ -910,6 +913,80 @@ ul {
         left: 100px;
         width: 35px;
     }
+    
+    /* =========================================
+       PORTFOLIO SECTION (DESKTOPS)
+       ========================================= */
+    .portfolio-section {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
 
+    .portfolio-title {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 1;
+        margin-bottom: 70px;
+        max-width: 685px;
+    }
+
+    .portfolio-slider-wrap {
+        max-width: 100%;
+        height: 624px;
+        margin-bottom: 50px;
+    }
+
+    /* Налаштовуємо трек для відображення 3-х фотографій одночасно */
+    .portfolio-track {
+        width: 100%;
+        gap: 40px;
+        padding: 0 40px;
+        justify-content: center;
+    }
+
+    .portfolio-slide {
+        flex: 1; 
+        height: 460px;
+        max-width: 360px;
+    }
+
+    .portfolio-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px; /* Відстань між крапочками 8px з Фігми */
+    }
+
+    .portfolio-pagination .dot {
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .portfolio-pagination .dot.active {
+        width: 16px;
+        background-color: #5454D4;
+        border-radius: 10px;
+    }
+
+    .icon-circles-portfolio {
+        top: 0;
+        right: 0;
+        width: 62px;
+        transform: rotate(-27.37deg);
+    }
+
+    .icon-zigzag-portfolio {
+        bottom: 0px; 
+        left: 74px;
+    }
+
+    #btnPrev, #btnNext {
+        display: none !important;
+    }
 
 }
