@@ -542,6 +542,98 @@ ul {
     width: 28px;
 }
 
+.relative { position: relative; }
+
+                    /* =========================================
+                           PORTFOLIO SECTION (MOBILE)
+                    ========================================= */
+.portfolio-section {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+.portfolio-title {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.portfolio-slider-wrap {
+    max-width: 375px;
+    height: 294px;
+    margin: 0 auto 50px auto;
+    background: #1E1E20;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/*стрічка, на якій лежать всі фото.*/
+.portfolio-track {
+    display: flex;
+    gap: 24px;
+    padding: 0 24px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Самі фотографії */
+.portfolio-slide {
+    flex: 0 0 327px;
+    height: 246px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Блок з кнопками */
+.portfolio-controls {
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+}
+
+/* стилі для кнопок слайдера */
+.slider-btn {
+    width: 38.2px;
+    height: 38.2px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-white);
+    font-size: 14px;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+/* кнопка назад */
+.btn-prev {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* кнопка вперед */
+.btn-next {
+    background: #5454D4;
+}
+
+.slider-btn:active {
+    transform: scale(0.9);
+}
+
+
+.icon-circles-portfolio {
+    top: 51px; 
+    right: 20px;
+    width: 39.3px;
+    transform: rotate(-20.89deg);
+}
+
+.icon-zigzag-portfolio {
+    bottom: 45px;
+    left: 9px;
+    width: 61px;
+}
+
 /* =========================================
                 TABLETS & LAPTOPS
    ========================================= */
