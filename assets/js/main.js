@@ -32,9 +32,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.animate-on-scroll');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// =========================================
 // PORTFOLIO SLIDER
-// =========================================
 
 const track = document.getElementById('portfolioTrack');
 const slides = document.querySelectorAll('.portfolio-slide');

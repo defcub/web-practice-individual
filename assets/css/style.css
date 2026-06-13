@@ -372,9 +372,9 @@ ul {
 }
 
 
-/* =========================================
-                  VIDEO SECTION (MOBILE)
-        ========================================= */
+            /* =========================================
+                            VIDEO SECTION (MOBILE)
+            ========================================= */
 .video-section {
     padding-top: 140px;
     padding-bottom: 60px;
@@ -457,6 +457,38 @@ ul {
     position: relative;
     padding-top: 140px;
     padding-bottom: 60px;
+}
+
+/* --- ГРАДІЄНТ --- */
+.services-section::before {
+    content: '';
+    position: absolute;
+    width: 467px;
+    height: 508px;
+    top: 550px; 
+    left: 50px; 
+    border-radius: 233.5px;
+    transform: rotate(54.37deg);
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.21) 100%, rgba(84, 84, 212, 0.0882) 100%);
+    filter: blur(300px);
+    z-index: -0.1;
+    pointer-events: none;
+}
+
+/* --- ЖОВТО-РОЖЕВИЙ ГРАДІЄНТ --- */
+.services-section::after {
+    content: '';
+    position: absolute;
+    width: 860px;
+    height: 2576px;
+    top: 10px; 
+    left: -800px; 
+    border-radius: 233.5px;
+    transform: rotate(65.71deg);
+    background: linear-gradient(180deg, rgba(251, 168, 28, 0.048) 0%, rgba(224, 86, 136, 0.018) 100%);    /* Знову використовуємо filter замість backdrop-filter і зменшуємо для мобілки */
+    filter: blur(300px);
+    z-index: -0.2;
+    pointer-events: none;
 }
 
 .services-section .section-title {
@@ -645,6 +677,7 @@ ul {
     margin-top: 140px;
     padding-top: 80px; 
     padding-bottom: 80px;
+    background: #1E1E2080;
 }
 
 .contact-title {
@@ -723,82 +756,6 @@ ul {
     text-align: center;
 }
 
-/* =========================================
-                TABLETS & LAPTOPS
-   ========================================= */
-@media screen and (min-width: 789px) {
-    .d-mobile-only {
-        display: none;
-    }
-
-    .d-none-mobile {
-        display: block;
-    }
-
-    .nav-menu {
-        position: static;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-    }
-
-    .main-menu {
-        font-family: 'Nunito Sans', sans-serif;
-        flex-direction: row;
-        gap: 30px;
-        font-size: 1rem;
-    }
-
-    .main-menu a:hover {
-        color: var(--primary-color);
-    }
-
-    .hero-wrap {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .hero-content {
-        flex: 1;
-        padding-right: 40px;
-    }
-
-    .hero-visual {
-        flex: 1;
-        justify-content: flex-end;
-    }
-
-    .floating-icon {
-        transform: none;
-    }
-
-    .icon-zigzag {
-        top: 70px;
-        left: 360px;
-        width: 95px;
-    }
-
-    .icon-play {
-        top: 380px;
-        left: 350px;
-        width: 105px;
-    }
-
-    .icon-circles {
-        top: 60px;
-        right: 20px;
-        width: 51px;
-    }
-
-    .icon-plus {
-        bottom: 10px;
-        right: 0px;
-        width: 50px;
-    }
-
-
-}
 
 /* =========================================
             DESKTOPS & LARGE SCREENS
@@ -901,8 +858,8 @@ ul {
         width: 50px;
     }
 
-    /* =========================================
-                    VIDEO SECTION (DESKTOPS)
+            /* =========================================
+                      VIDEO SECTION (DESKTOPS)
             ========================================= */
     .video-section {
         padding-top: 150px;
@@ -1117,7 +1074,7 @@ ul {
     }
 
                    /* =========================================
-                           FOOTER (MOBILE)
+                                 FOOTER (MOBILE)
                    ========================================= */
 .main-footer {
     padding-top: 80px; 
