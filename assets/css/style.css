@@ -758,6 +758,84 @@ ul {
 
 
 /* =========================================
+                TABLETS & LAPTOPS
+   ========================================= */
+@media screen and (min-width: 789px) {
+    .d-mobile-only {
+        display: none;
+    }
+
+    .d-none-mobile {
+        display: block;
+    }
+
+    .nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .main-menu {
+        font-family: 'Nunito Sans', sans-serif;
+        flex-direction: row;
+        gap: 30px;
+        font-size: 1rem;
+    }
+
+    .main-menu a:hover {
+        color: var(--primary-color);
+    }
+
+    .hero-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .hero-visual {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .floating-icon {
+        transform: none;
+    }
+
+    .icon-zigzag {
+        top: 70px;
+        left: 360px;
+        width: 95px;
+    }
+
+    .icon-play {
+        top: 380px;
+        left: 350px;
+        width: 105px;
+    }
+
+    .icon-circles {
+        top: 60px;
+        right: 20px;
+        width: 51px;
+    }
+
+    .icon-plus {
+        bottom: 10px;
+        right: 0px;
+        width: 50px;
+    }
+
+
+}
+
+
+/* =========================================
             DESKTOPS & LARGE SCREENS
    ========================================= */
 @media screen and (min-width: 1025px) {
@@ -788,7 +866,7 @@ ul {
     .visual-composition {
         width: 450px;
         height: 550px;
-        left: 100px;
+        left: 50px;
         top: 100px;
         scale: 1;
     }
