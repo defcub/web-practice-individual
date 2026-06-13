@@ -465,8 +465,8 @@ ul {
     position: absolute;
     width: 467px;
     height: 508px;
-    top: 550px; 
-    left: 50px; 
+    top: -100px; 
+    left: -120px; 
     border-radius: 233.5px;
     transform: rotate(54.37deg);
     background: linear-gradient(180deg, rgba(84, 84, 212, 0.21) 100%, rgba(84, 84, 212, 0.0882) 100%);
@@ -481,8 +481,7 @@ ul {
     position: absolute;
     width: 860px;
     height: 2576px;
-    top: 10px; 
-    left: -800px; 
+    top: -270px;  
     border-radius: 233.5px;
     transform: rotate(65.71deg);
     background: linear-gradient(180deg, rgba(251, 168, 28, 0.048) 0%, rgba(224, 86, 136, 0.018) 100%);    /* Знову використовуємо filter замість backdrop-filter і зменшуємо для мобілки */
