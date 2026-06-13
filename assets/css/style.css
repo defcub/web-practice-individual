@@ -1029,4 +1029,44 @@ ul {
         display: none !important;
     }
 
+    /* =========================================
+       CONTACT SECTION (DESKTOPS)
+       ========================================= */
+    .contact-section {
+        padding-top: 187px;
+        padding-bottom: 187px;
+    }
+
+    .contact-section .content-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-title {
+        font-size: 60px;
+        line-height: 1;
+        max-width: 826px;
+        margin-bottom: 0;
+    }
+
+    .contact-btn {
+        width: 201px;
+        height: 60px;
+        margin-top: 36px;
+    }
+
+    .icon-plus-contact {
+        top: -118px;
+        right: 52px;
+        width: 42px;
+    }
+
+    .icon-circles-contact {
+        bottom: -123px;
+        left: 39px;
+        width: 51px;
+    }
+
 }
