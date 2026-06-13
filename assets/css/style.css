@@ -675,6 +675,54 @@ ul {
     width: 39px;
 }
 
+                /* =========================================
+                           FOOTER (MOBILE)
+                ========================================= */
+.main-footer {
+    padding-top: 80px; 
+    padding-bottom: 50px;
+}
+
+.footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-inner .logo {
+    justify-content: center;
+}
+
+.footer-nav ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px; 
+}
+
+.footer-nav a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize; /*xперша літера кожного слова велика */
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
 /* =========================================
                 TABLETS & LAPTOPS
    ========================================= */
