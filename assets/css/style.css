@@ -706,7 +706,7 @@ ul {
     font-size: 18px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.7);
-    text-transform: capitalize; /*xперша літера кожного слова велика */
+    text-transform: capitalize; /*перша літера кожного слова велика */
     transition: color 0.3s ease;
 }
 
@@ -719,7 +719,7 @@ ul {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
 }
 
@@ -1002,9 +1002,9 @@ ul {
         rotate: -25.34deg;
     }
     
-    /* =========================================
-       PORTFOLIO SECTION (DESKTOPS)
-       ========================================= */
+                /* =========================================
+                       PORTFOLIO SECTION (DESKTOPS)
+                ========================================= */
     .portfolio-section {
         padding-top: 150px;
         padding-bottom: 120px;
@@ -1025,7 +1025,6 @@ ul {
         margin-bottom: 50px;
     }
 
-    /* Налаштовуємо трек для відображення 3-х фотографій одночасно */
     .portfolio-track {
         width: 100%;
         gap: 40px;
@@ -1043,7 +1042,7 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px; /* Відстань між крапочками 8px з Фігми */
+        gap: 8px; 
     }
 
     .portfolio-pagination .dot {
@@ -1077,9 +1076,9 @@ ul {
         display: none !important;
     }
 
-    /* =========================================
-       CONTACT SECTION (DESKTOPS)
-       ========================================= */
+                    /* =========================================
+                           CONTACT SECTION (DESKTOPS)
+                    ========================================= */
     .contact-section {
         padding-top: 187px;
         padding-bottom: 187px;
@@ -1116,5 +1115,40 @@ ul {
         left: 39px;
         width: 51px;
     }
+
+                   /* =========================================
+                           FOOTER (MOBILE)
+                   ========================================= */
+.main-footer {
+    padding-top: 80px; 
+    padding-bottom: 50px;
+}
+
+.footer-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-inner .logo {
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.footer-nav ul {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0 99px;
+}
+
+.footer-nav a {
+    line-height: 28px;
+    text-align: center;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
 
 }
